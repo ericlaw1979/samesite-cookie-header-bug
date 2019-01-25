@@ -30,13 +30,17 @@ Three cookies are being set on index page request: one using `SameSite=strict`, 
 
 Notes: In order to test this I decided to append the port to the cookie key, so we can check quickly from which url/port the cookie cames from.
 
+
 ### Results
 
 #### Google Chrome (version 71.0.3578.98)
 
-#### FF (version 64.0.2)
-
-#### Safari (version 12.0.2)
-
+* Following the link from `index` to `about` pages sends the right request cookies.
+* Following the link to another domain url shows `SameSite=strict` cookies in JS script (logging `document.cookie`).
 
 ### Chromium issue URL
+
+https://bugs.chromium.org/p/chromium/issues/detail?id=925311
+
+
+Note: This test was also performed with **Firefox (version 64.0.2)** and **Safari (version 12.0.2)** and logging the cross-origin request cookies does not log `SameSite=strict` cookies.
