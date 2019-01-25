@@ -1,0 +1,11 @@
+html
+  head
+    title= title
+  body
+    h2= title + ' page'
+    h3= message
+
+    a(href="/") back to index
+
+    script(type='text/javascript').
+      console.log("/index cookies: ", document.cookie)
