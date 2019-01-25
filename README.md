@@ -38,6 +38,9 @@ Notes: In order to test this I decided to append the port to the cookie key, so 
 * Following the link from `index` to `about` pages sends the right request cookies.
 * Following the link to another domain url shows `SameSite=strict` cookies in JS script (logging `document.cookie`).
 
+![image](https://user-images.githubusercontent.com/1150553/51750322-aae1d700-20a9-11e9-9cef-04b8b8c6ace5.gif)
+
+
 ### Chromium issue URL
 
 https://bugs.chromium.org/p/chromium/issues/detail?id=925311
